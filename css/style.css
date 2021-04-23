@@ -1,0 +1,9 @@
+.wrapper {
+    width: 1200px;
+}
+.header {
+    display: flex;
+}
+.header .menu ul {
+    display: flex;
+ }
