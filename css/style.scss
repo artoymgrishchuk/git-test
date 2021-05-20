@@ -5,8 +5,12 @@
     display: flex;
     justify-content: space-between;
 }
-.header .menu ul {
-    display: flex;
+.header {
+    .menu {
+        ul {
+            display: flex;
+        }
+    }
  }
 .header .logo {
 }
