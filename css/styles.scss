@@ -1,24 +1,48 @@
+$opensans_font: 'Open Sans', sans-serif;
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/GothamBold.otf);
+   }
+@font-face {
+    font-family: MyriadPro;
+    src: url(../fonts/MyriadPro-Regular.otf);
+   }
+@font-face {
+    font-family: GothamMedium;
+    src: url(../fonts/GothamMedium.otf);
+   }
 .main {
     background: url(../image/main/main_background.png) center center no-repeat;
     height: 900px;
     .header {
+        padding-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 300px;
+        .logo {
+            padding-left: 50px;
+        }
         .menu {
             ul {
                 list-style: none; /*убираем маркеры списка*/
                 margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
-                padding-left: 0; /*убираем левый отступ, равный 40px*/
+                padding-left: 60px; /*убираем левый отступ, равный 40px*/
             }
             a {
                 text-decoration: none; /*убираем подчеркивание текста ссылок*/
+                color: #dbdbdb;
+                font-family: MyriadPro;
+                font-size: 16px;
+                font-weight: 400;
             }
             li {
                 display: inline;
+                margin-right: 60px;
             }
         }
         .social {
+            padding-right: 30px;
             ul {
                 list-style: none; /*убираем маркеры списка*/
                 margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
@@ -26,9 +50,11 @@
             }
             a {
                 text-decoration: none; /*убираем подчеркивание текста ссылок*/
+                color: #f5f5f5;
             }
             li {
                 display: inline;
+                margin-right: 20px;
             }
         }
     }
@@ -38,7 +64,19 @@
         justify-content: center;
         align-items: center;
         h1 {
-        
+            color: #f5f5f5;
+            font-size: 140px;
+            text-transform: uppercase;
+            font-family: GothamBold;
+        }
+        h2 {
+            color: #186384;
+            text-transform: uppercase;
+            padding-left: 20px;
+            letter-spacing: 19px;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: GothamMedium;
         }
     }
 }

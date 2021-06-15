@@ -1,10 +1,26 @@
 @charset "UTF-8";
+@font-face {
+  font-family: GothamBold;
+  src: url(../fonts/GothamBold.otf);
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+@font-face {
+  font-family: GothamMedium;
+  src: url(../fonts/GothamMedium.otf);
+}
+
 .main {
   background: url(../image/main/main_background.png) center center no-repeat;
   height: 900px;
 }
 
 .main .header {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +31,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 300px;
+}
+
+.main .header .logo {
+  padding-left: 50px;
 }
 
 .main .header .menu ul {
@@ -22,17 +43,26 @@
   /*убираем маркеры списка*/
   margin: 0;
   /*убираем верхнее и нижнее поле, равное 1em*/
-  padding-left: 0;
+  padding-left: 60px;
   /*убираем левый отступ, равный 40px*/
 }
 
 .main .header .menu a {
   text-decoration: none;
   /*убираем подчеркивание текста ссылок*/
+  color: #dbdbdb;
+  font-family: MyriadPro;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .main .header .menu li {
   display: inline;
+  margin-right: 60px;
+}
+
+.main .header .social {
+  padding-right: 30px;
 }
 
 .main .header .social ul {
@@ -47,10 +77,12 @@
 .main .header .social a {
   text-decoration: none;
   /*убираем подчеркивание текста ссылок*/
+  color: #f5f5f5;
 }
 
 .main .header .social li {
   display: inline;
+  margin-right: 20px;
 }
 
 .main .main-text {
@@ -67,4 +99,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main .main-text h1 {
+  color: #f5f5f5;
+  font-size: 140px;
+  text-transform: uppercase;
+  font-family: GothamBold;
+}
+
+.main .main-text h2 {
+  color: #186384;
+  text-transform: uppercase;
+  padding-left: 20px;
+  letter-spacing: 19px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: GothamMedium;
 }
