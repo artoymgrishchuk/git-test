@@ -20,11 +20,14 @@ $opensans_font: 'Open Sans', sans-serif;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 300px;
+        border-bottom: 1px #6e6f70 solid;
         .logo {
             padding-left: 50px;
+            padding-bottom: 30px;
         }
         .menu {
             ul {
+                padding-top: 30px;
                 list-style: none; /*убираем маркеры списка*/
                 margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
                 padding-left: 60px; /*убираем левый отступ, равный 40px*/

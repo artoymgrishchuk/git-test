@@ -32,13 +32,16 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 300px;
+  border-bottom: 1px #6e6f70 solid;
 }
 
 .main .header .logo {
   padding-left: 50px;
+  padding-bottom: 30px;
 }
 
 .main .header .menu ul {
+  padding-top: 30px;
   list-style: none;
   /*убираем маркеры списка*/
   margin: 0;
