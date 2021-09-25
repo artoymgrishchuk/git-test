@@ -46,6 +46,7 @@ $opensans_font: 'Open Sans', sans-serif;
         }
         .social {
             padding-right: 30px;
+            margin-top: 30px;
             ul {
                 list-style: none; /*убираем маркеры списка*/
                 margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
@@ -80,6 +81,14 @@ $opensans_font: 'Open Sans', sans-serif;
             font-weight: 600;
             font-size: 20px;
             font-family: GothamMedium;
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
         }
     }
 }
